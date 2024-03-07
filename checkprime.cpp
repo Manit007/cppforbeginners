@@ -12,11 +12,10 @@ bool checkprime(int n,int *count)
     {
         if(n%i==0)
         {
-            count++;
+            *count+=1;
         }
-        continue;
     }
-    if(*count>2)
+    if(*count>0)
     {
         return true;
     }
