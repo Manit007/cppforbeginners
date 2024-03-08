@@ -22,14 +22,14 @@ void readmatrix(int s[20][20],int m,int n)
 void countitems(int s[][20],int *count,int m,int n,MATRIX a[])
 {
     int i,j,k=1;
-    for(i=1;i<=m;i++)
+    for(i=0;i<m;i++)
     {
-        for(j=1;j<=n;j++)
+        for(j=0;j<n;j++)
         {
             if(s[i][j]!=0)
             {
-                a[k].row=i;
-                a[k].column=j;
+                a[k].row=i+1;
+                a[k].column=j+1;
                 a[k].value=s[i][j];
                 k++;
                 *count+=1;
@@ -66,7 +66,7 @@ int searchkey(int s[][20],MATRIX a[],int key)
 }
 int main()
 {
-    MATRIX a[50];
+    MATRIX a[50]={};
     int m,n,s[20][20],count=0,key,res;
     cout<<"Enter number of Rows and Columns of Matrix:"<<endl;
     cin>>m>>n;
