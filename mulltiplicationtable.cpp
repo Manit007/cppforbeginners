@@ -10,7 +10,7 @@ void table(int num)
     }
     for(i=1;i<=10;i++)
     {
-        cout<<num<<"*"<<i<<"="<<num*i<<endl;
+        cout<<num<<"x"<<i<<"="<<num*i<<endl;
     }
     return;
 }
